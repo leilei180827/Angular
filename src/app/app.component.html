@@ -298,7 +298,15 @@
     }
   }
 </style>
-
+<div>
+  <h1>{{ title }}</h1>
+  <nav>
+    <a routerLink="/heroes">Heroes</a>
+    <a routerLink="/dashboard">Dashboard</a>
+  </nav>
+  <router-outlet></router-outlet>
+  <app-messages></app-messages>
+</div>
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
   <img
@@ -332,7 +340,6 @@
 </div>
 
 <div class="content" role="main">
-  <app-heroes></app-heroes>
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
     <svg
@@ -987,5 +994,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<router-outlet></router-outlet>
